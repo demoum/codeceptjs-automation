@@ -29,6 +29,8 @@ npx codeceptjs run
 
 Rodar os testes com tag: 
 npx codeceptjs run --grep 'task duplicada'
+
+Rodar os testes com HTML Reporter: 
 npx codeceptjs run --reporter mochawesome
 ```
 
