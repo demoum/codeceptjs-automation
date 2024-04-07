@@ -1,0 +1,238 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-04-07T18:30:17.602Z",
+    "end": "2024-04-07T18:30:33.454Z",
+    "duration": 15852,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "31d7433c-530f-4cc3-9826-62996ab2aa4e",
+      "title": "",
+      "fullFile": "C:\\Users\\matheus.moura\\Documents\\Testes\\QAx\\projects\\codeceptjs-express-qa\\e2e\\tasks_test.js",
+      "file": "\\e2e\\tasks_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+          "title": "tasks",
+          "fullFile": "C:\\Users\\matheus.moura\\Documents\\Testes\\QAx\\projects\\codeceptjs-express-qa\\e2e\\tasks_test.js",
+          "file": "\\e2e\\tasks_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"tasks\"",
+              "fullTitle": "tasks \"before all\" hook: codeceptjs.beforeSuite in \"tasks\"",
+              "timedOut": false,
+              "duration": 1838,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "d2bcb32c-b637-4594-a6e6-4c1162c1f0df",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"tasks\"",
+              "fullTitle": "tasks \"before each\" hook: codeceptjs.before in \"tasks\"",
+              "timedOut": false,
+              "duration": 767,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "6975295a-d15f-4972-a15a-0aa3177e5e98",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"tasks\"",
+              "fullTitle": "tasks \"after all\" hook: codeceptjs.afterSuite in \"tasks\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "b8c594bc-b67d-4e92-8ff7-0cdc14ed3ca5",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"tasks\"",
+              "fullTitle": "tasks \"after each\" hook: finalize codeceptjs in \"tasks\"",
+              "timedOut": false,
+              "duration": 102,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "51e4a64a-f9f6-48ad-a4cd-071bfc230cf3",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "deve poder cadastrar uma nova tarefa | {\"name\":\"Fazer compras\"}",
+              "fullTitle": "tasks: deve poder cadastrar uma nova tarefa | {\"name\":\"Fazer compras\"}",
+              "timedOut": false,
+              "duration": 2174,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I, tasksPage, current }) => {\n  const taskName = current.name\n  I.deleteByHelper(taskName);\n  tasksPage.create(taskName);\n  tasksPage.haveTask(taskName);",
+              "err": {},
+              "uuid": "4487a8c1-d2d6-45d5-9037-3c3dbb1ed919",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve poder cadastrar uma nova tarefa | {\"name\":\"Estudar JavaScript\"}",
+              "fullTitle": "tasks: deve poder cadastrar uma nova tarefa | {\"name\":\"Estudar JavaScript\"}",
+              "timedOut": false,
+              "duration": 1926,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I, tasksPage, current }) => {\n  const taskName = current.name\n  I.deleteByHelper(taskName);\n  tasksPage.create(taskName);\n  tasksPage.haveTask(taskName);",
+              "err": {},
+              "uuid": "44674a2f-a26e-4374-94e4-e721cf05da9a",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve poder cadastrar uma nova tarefa | {\"name\":\"Ler um livro de node JS\"}",
+              "fullTitle": "tasks: deve poder cadastrar uma nova tarefa | {\"name\":\"Ler um livro de node JS\"}",
+              "timedOut": false,
+              "duration": 2045,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I, tasksPage, current }) => {\n  const taskName = current.name\n  I.deleteByHelper(taskName);\n  tasksPage.create(taskName);\n  tasksPage.haveTask(taskName);",
+              "err": {},
+              "uuid": "4e188442-ee7d-478e-a40b-b33f0b14644b",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "não deve cadastrar uma nova tarefa com nome duplicado @task duplicada",
+              "fullTitle": "tasks: não deve cadastrar uma nova tarefa com nome duplicado @task duplicada",
+              "timedOut": false,
+              "duration": 3469,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"não_deve_c_d8a4a7a7-ef31-4dcc-9da0-4b4c8cdf97c2.failed.png\"",
+              "code": "I, tasksPage }) => {\n    const task = {\n      name: \"Pagar fatura do cartão\",\n      is_done: false,\n    };\n    I.deleteByHelper(task.name);\n    I.postTask(task);\n    tasksPage.create(task.name);\n    tasksPage.popUpHaveText(\"Task already existsws!\");",
+              "err": {
+                "message": null,
+                "estack": null,
+                "diff": "- Task already exists!\n+ Task already existsws!\n"
+              },
+              "uuid": "d8a4a7a7-ef31-4dcc-9da0-4b4c8cdf97c2",
+              "parentUUID": "d34c8f4c-04fb-4be7-beb7-d6ab290482b1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4487a8c1-d2d6-45d5-9037-3c3dbb1ed919",
+            "44674a2f-a26e-4374-94e4-e721cf05da9a",
+            "4e188442-ee7d-478e-a40b-b33f0b14644b"
+          ],
+          "failures": [
+            "d8a4a7a7-ef31-4dcc-9da0-4b4c8cdf97c2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9614,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "output"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
