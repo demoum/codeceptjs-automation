@@ -14,6 +14,9 @@ npx codeceptjs init
 
 Criar setup para Page Objects: 
 npx codeceptjs gpo  
+
+HTML Reporter
+npm i mochawesome mocha -D
 ```
     
 ## Rodando os testes
